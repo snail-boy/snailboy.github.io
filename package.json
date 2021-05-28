@@ -1,0 +1,55 @@
+{
+  "name": "snail-blog",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "vuepress build docs",
+    "deploy": "bash deploy.sh",
+    "baiduPush": "node utils/baiduPush.js https://xugaoyi.com && bash baiduPush.sh",
+    "cz:changelog": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
+    "dev": "vuepress dev docs",
+    "editFm": "node utils/editFrontmatter.js",
+    "publish": "cd ./theme-vdoing && npm publish && cd ../ && npm run updateTheme",
+    "updateTheme": "npm uninstall vuepress-theme-vdoing && rm -rf node_modules && npm i && npm i vuepress-theme-vdoing -D"
+  },
+  "dependencies": {
+    "vuepress-plugin-comment": "^0.7.3"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.2.0",
+    "@commitlint/config-conventional": "^7.5.0",
+    "@ziyi2/vue-cli-plugin-ui-cz": "~1.0.0",
+    "commitizen": "^3.0.5",
+    "conventional-changelog": "^3.0.5",
+    "cz-customizable": "^5.2.0",
+    "dayjs": "^1.9.7",
+    "husky": "^1.1.1",
+    "inquirer": "^7.1.0",
+    "json2yaml": "^1.1.0",
+    "vuepress": "1.8.0",
+    "vuepress-plugin-baidu-autopush": "^1.0.1",
+    "vuepress-plugin-baidu-tongji": "^1.0.1",
+    "vuepress-plugin-demo-block": "^0.7.2",
+    "vuepress-plugin-one-click-copy": "^1.0.2",
+    "vuepress-plugin-thirdparty-search": "^1.0.2",
+    "vuepress-plugin-zooming": "^1.1.7",
+    "vuepress-theme-vdoing": "^1.8.3",
+    "yamljs": "^0.3.0"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
+  "homepage": "https://websmallrabbit.github.io/snail-blog",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "license": "MIT"
+}
