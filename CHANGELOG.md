@@ -1,20 +1,12 @@
-# 1.0.0 (2021-05-27)
+# 1.0.0 (2021-05-28)
 
 
 ### Bug Fixes
 
-* **ui:** 增加自动提交记录 ([2a3be21](https://github.com/websmallrabbit/snail-blog/commit/2a3be218003b62351ab983506cd4977a30ad2aba))
-* **ui:** 解决github静态资源访问不到 ([ff8d32f](https://github.com/websmallrabbit/snail-blog/commit/ff8d32f39d82268f4ad9c42999a778ac5c038560))
-* **增加代码提交规范配置,cz:** cz ([cd40172](https://github.com/websmallrabbit/snail-blog/commit/cd40172f216d190000f8d213d867848bfaf8b481))
-
-
-
-# 1.0.0 (2021-05-27)
-
-
-### Bug Fixes
-
-* **增加代码提交规范配置,cz:** cz ([cd40172](https://github.com/websmallrabbit/snail-blog/commit/cd40172f216d190000f8d213d867848bfaf8b481))
+* **ui:** peizhi ([f03f188](https://github.com/websmallrabbit/websmallrabbit.github.io/commit/f03f188a8b997b216161d8ab08d3925fcaa96990))
+* **ui:** peizhi2 ([5fc0c9f](https://github.com/websmallrabbit/websmallrabbit.github.io/commit/5fc0c9ffb73d8ddae33d9a05275182b58362a8a3))
+* **ui:** peizhi3 ([ea054dc](https://github.com/websmallrabbit/websmallrabbit.github.io/commit/ea054dc789055127fc9e60c50d812ecd38c88c91))
+* **ui:** peizhi3 ([f5f6213](https://github.com/websmallrabbit/websmallrabbit.github.io/commit/f5f62135735a46cc7563dff71cd267152b688626))
 
 
 
