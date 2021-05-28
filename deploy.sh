@@ -29,7 +29,7 @@ cd docs/.vuepress/dist
 
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
-  githubUrl=git@github.com:websmallrabbit/snail-blog.git
+  githubUrl=git@github.com:websmallrabbit/websmallrabbit.github.io.git
 else
   msg='来自github actions的自动部署'
   githubUrl=https://websmallrabbit:${GITHUB_TOKEN}@github.com/websmallrabbit.github.io.git
