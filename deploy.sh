@@ -32,7 +32,7 @@ if [ -z "$GITHUB_TOKEN" ]; then
   githubUrl=git@github.com:websmallrabbit/websmallrabbit.github.io.git
 else
   msg='来自github actions的自动部署'
-  githubUrl=https://websmallrabbit:${GITHUB_TOKEN}@github.com/websmallrabbit.github.io.git
+  githubUrl=https://websmallrabbit:${GITHUB_TOKEN}@github.com/websmallrabbit/websmallrabbit.github.io.git
   git config --global user.name "websmallrabbit"
   git config --global user.email "wk_web@qq.com"
 fi
