@@ -7,7 +7,7 @@ set -e
 # npm run build
 
 # 进入生成的文件夹
-cd docs/.vuepress/dist
+# cd docs/.vuepress/dist
 
 # deploy to github pages
 # echo 'blog.webrabbit.top' > CNAME
@@ -48,15 +48,13 @@ cd docs/.vuepress/dist
 
 
 # if [ -z "$CODING_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
-#   codingUrl=https://git@e.coding.net:websmallrabbit/snail-blog/snail-blog.git
+#   codingUrl=git@e.coding.net:websmallrabbit/snail-blog/snail-blog.git
 # else
-#   codingUrl=https://websmallrabbit:${CODING_TOKEN}@e.coding.net/websmallrabbit/snail-blog/snail-blog.git
+#   codingUrl=https://websmallrabbit:${CODING_TOKEN}git@e.coding.net/websmallrabbit/snail-blog/snail-blog.git
 # fi
 git add -A
 git commit -m "${msg}"
-git push -f https://git@e.coding.net:websmallrabbit/snail-blog/snail-blog.gitgit master # 推送到coding
+git push -f git@e.coding.net:websmallrabbit/snail-blog/snail-blog.git master # 推送到coding
 
 # cd -
 # rm -rf docs/.vuepress/dist
-
-# test1
