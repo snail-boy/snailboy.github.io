@@ -34,7 +34,7 @@ set -e
 #   msg='来自github actions的自动部署'
 #   githubUrl=https://websmallrabbit:${GITHUB_TOKEN}@github.com/websmallrabbit/websmallrabbit.github.io.git
 #   git config --global user.name "websmallrabbit"
-#   git config --global user.email "wk_web@qq.com"
+#   git config --global user.email "wk_web@163.com"
 # fi
 # git init
 # git add -A
@@ -47,14 +47,16 @@ set -e
 # echo 'google.com, pub-7828333725993554, DIRECT, f08c47fec0942fa0' > ads.txt # 谷歌广告相关文件
 
 
-# if [ -z "$CODING_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
-#   codingUrl=git@e.coding.net:websmallrabbit/snail-blog/snail-blog.git
-# else
-#   codingUrl=https://websmallrabbit:${CODING_TOKEN}git@e.coding.net/websmallrabbit/snail-blog/snail-blog.git
-# fi
+if [ -z "$CODING_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
+  codingUrl=git@e.coding.net:websmallrabbit/snail-blog/snail-blog.git
+else
+  codingUrl=https://websmallrabbit:${CODING_TOKEN}git@e.coding.net/websmallrabbit/snail-blog/snail-blog.git
+  git config --global user.name "websmallrabbit"
+  git config --global user.email "wk_web@163.com"
+fi
 git add -A
 git commit -m "${msg}"
-git push -f git@e.coding.net:websmallrabbit/snail-blog/snail-blog.git master # 推送到coding
+git push -f $codingUrl master # 推送到coding
 
-# cd -
+cd -
 # rm -rf docs/.vuepress/dist
