@@ -53,8 +53,8 @@ module.exports = {
   blogger: {
     // 博主信息，显示在首页侧边栏
     avatar: 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
-    name: 'Evan Xu',
-    slogan: '前端界的小学生',
+    name: 'Snail Wangke',
+    slogan: '公众号：程序员蜗牛',
   },
   social: {
     // 社交图标，显示于博主信息栏和页脚栏
