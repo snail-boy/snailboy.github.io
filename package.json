@@ -4,7 +4,7 @@
   "scripts": {
     "build": "vuepress build docs",
     "deploy": "bash deploy.sh",
-    "baiduPush": "node utils/baiduPush.js https://xugaoyi.com && bash baiduPush.sh",
+    "baiduPush": "node utils/baiduPush.js https://websmallrabbit.github.io && bash baiduPush.sh",
     "cz:changelog": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
     "dev": "vuepress dev docs",
     "editFm": "node utils/editFrontmatter.js",
