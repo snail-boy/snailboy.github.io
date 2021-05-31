@@ -47,13 +47,13 @@ module.exports = {
 
   author: {
     // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, link: String}
-    name: 'xugaoyi', // 必需
-    link: 'https://github.com/xugaoyi', // 可选的
+    name: 'wangke', // 必需
+    link: 'https://github.com/websmallrabbit', // 可选的
   },
   blogger: {
     // 博主信息，显示在首页侧边栏
     avatar: 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
-    name: 'Snail Wangke',
+    name: 'webrabbit',
     slogan: '公众号：程序员蜗牛',
   },
   social: {
