@@ -59,4 +59,4 @@ git push -f $githubUrl master:gh-pages # 推送到github
 # git push -f https://git@e.coding.net:websmallrabbit/snail-blog/snail-blog.git master # 推送到coding
 
 cd -
-# rm -rf docs/.vuepress/dist
+rm -rf docs/.vuepress/dist
