@@ -52,7 +52,7 @@ module.exports = {
   },
   blogger: {
     // 博主信息，显示在首页侧边栏
-    avatar: 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
+    avatar: 'https://avatars.githubusercontent.com/u/34472552?v=4',
     name: 'webrabbit',
     slogan: '公众号：程序员蜗牛',
   },
@@ -79,7 +79,7 @@ module.exports = {
   },
   footer: {
     // 页脚信息
-    createYear: 2019, // 博客创建年份
+    createYear: 2021, // 博客创建年份
     copyrightInfo:
       'Ke Wang | <a href="https://github.com/websmallrabbit/websmallrabbit.github.io/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
   },

@@ -1,4 +1,9 @@
 #!/usr/bin/env sh
+###
+ # @Author: wangke
+ # @Date: 2021-05-26 19:06:09
+ # @Description: file content
+### 
 
 # 确保脚本抛出遇到的错误
 set -e
@@ -58,5 +63,6 @@ git push -f $githubUrl master:gh-pages # 推送到github
 # git commit -m "${msg}"
 # git push -f https://git@e.coding.net:websmallrabbit/snail-blog/snail-blog.git master # 推送到coding
 
+# test
 cd -
 rm -rf docs/.vuepress/dist
