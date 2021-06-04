@@ -15,7 +15,7 @@ npm run build
 cd docs/.vuepress/dist
 
 # deploy to github pages
-# echo 'blog.webrabbit.top' > CNAME
+echo 'blog.webrabbit.top' > CNAME
 
 # if [ -z "$GITHUB_TOKEN" ]; then
 #   msg='deploy'
