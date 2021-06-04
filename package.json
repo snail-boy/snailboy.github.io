@@ -12,7 +12,10 @@
     "updateTheme": "npm uninstall vuepress-theme-vdoing && rm -rf node_modules && npm i && npm i vuepress-theme-vdoing -D"
   },
   "dependencies": {
-    "vuepress-plugin-comment": "^0.7.3"
+    "vuepress-plugin-comment": "^0.7.3",
+    "vuepress-plugin-dynamic-title": "^1.0.0",
+    "vuepress-plugin-meting": "^0.2.3",
+    "vuepress-plugin-ribbon": "^1.0.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.2.0",
