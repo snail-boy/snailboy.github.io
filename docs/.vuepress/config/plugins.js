@@ -88,7 +88,7 @@ module.exports = [
         repo: 'snail-blog-gitalk-comment', // GitHub 仓库
         owner: 'websmallrabbit', // GitHub仓库所有者
         admin: ['websmallrabbit'], // 对仓库有写权限的人
-        // distractionFreeMode: true,
+        distractionFreeMode: false,
         pagerDirection: 'last', // 'first'正序 | 'last'倒序
         id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
         title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
